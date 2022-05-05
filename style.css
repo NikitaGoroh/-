@@ -1,11 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  outline: none;
 }
 
 .container {
   width: 1140px;
-  margin-left: 230px;
+  margin: 0 auto;
 }
 
 .header {
@@ -135,6 +136,7 @@
   float: left;
   margin-top: 290px;
   height: 93px;
+  font-family: "Lato";
 }
 
 .bannerTextTop {
@@ -147,6 +149,170 @@
   font-weight: 700;
   font-size: 32px;
   color: #222222;
+}
+
+.cards_sec {
+  margin-bottom: 96px;
+}
+
+.fetured {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #222222;
+  text-align: center;
+  margin-top: 90px;
+}
+
+.feturedShop {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9F9F9F;
+  text-align: center;
+  margin-top: 6px;
+}
+
+.card {
+  width: 360px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+
+.card:hover .card-pic {
+  -webkit-filter: brightness(30%);
+          filter: brightness(30%);
+}
+
+.card-link {
+  display: block;
+  text-decoration: none;
+}
+
+.card-pic {
+  width: 100%;
+}
+
+.text-box {
+  padding: 20px;
+  background-color: #F8F8F8;
+}
+
+.card-name {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+  margin-bottom: 13px;
+}
+
+.card-desc {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5D5D5D;
+  margin-bottom: 18px;
+}
+
+.card-price {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F16D7F;
+}
+
+.add {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 13px;
+  border: 1px solid #FFFFFF;
+  pointer-events: all;
+}
+
+.add-box {
+  display: none;
+  position: absolute;
+  top: 188px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  pointer-events: none;
+}
+
+.add-txt {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  margin-left: 11px;
+}
+
+.add:hover {
+  -webkit-box-shadow: 0 0px 10px #FFFFFF;
+          box-shadow: 0 0px 10px #FFFFFF;
+}
+
+.card:hover .add-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 48px;
+}
+
+.browse_all-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 18px;
+}
+
+.browse_all {
+  border: 1px solid #F26376;
+  background-color: #FFFFFF;
+  text-decoration: none;
+}
+
+.browse_all-txt {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F26376;
+  padding: 14px 38px;
 }
 
 .fashion {
@@ -169,6 +335,7 @@
   right: 125px;
   color: #F1E4E6;
   height: 40px;
+  font-family: "Lato";
 }
 
 .textAccesories {
@@ -224,6 +391,7 @@
   font-size: 19.96px;
   line-height: 24px;
   color: #FBFBFB;
+  font-family: "Lato";
 }
 
 .textInfo {
@@ -231,6 +399,7 @@
   font-size: 13.972px;
   line-height: 17px;
   color: #FBFBFB;
+  font-family: "Lato";
 }
 
 .info_container {
@@ -248,8 +417,8 @@
 
 .background_sea {
   background-image: url(img/sea.png);
-  height: 448px;
-  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-bottom: 126px;
 }
 
 .footer_flex {
@@ -283,6 +452,7 @@
   font-size: 20px;
   line-height: 24px;
   color: #222224;
+  font-family: "Lato";
 }
 
 .footer_top_right {
@@ -307,15 +477,17 @@
   font-size: 18px;
   line-height: 30px;
   color: #222224;
+  font-family: "Lato";
 }
 
 .subscribe_bolt {
   font-weight: 700;
   font-size: 24px;
   line-height: 40px;
+  font-family: "Lato";
 }
 
-.button {
+.footer_button {
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   border-style: none;
@@ -329,6 +501,7 @@
           align-items: center;
   color: #ffffff;
   padding: 21px;
+  font-family: "Lato";
 }
 
 .email {
@@ -341,7 +514,12 @@
 
 .footer_bottom {
   background-color: #222224;
-  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .rights {
@@ -350,5 +528,39 @@
   line-height: 19px;
   color: #FBFBFB;
   padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: "Lato";
+}
+
+.icons {
+  padding: 23px;
+  width: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fa-brands {
+  padding: 8px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.fa-facebook-f {
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+.fa-pinterest-p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.fa-instagram {
+  padding-left: 9px;
+  padding-right: 9px;
 }
 /*# sourceMappingURL=style.css.map */
