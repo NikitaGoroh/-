@@ -4,6 +4,9 @@
     outline: none;
 }
 
+$pink: #F16D7F;
+$white: #FFFFFF;
+$black: #222222;
 
 
 .container {
@@ -13,7 +16,7 @@
 }
 
 .header {
-    background-color: #222222;
+    background-color: $black;
 }
 
 .menu_header {
@@ -64,12 +67,13 @@
 
 
 .mega-box {
-    background-color: #ffffff;
-    border: 1px solid #FFFFFF;
+    background-color: $white;
+    border: 1px solid $white;
     padding: 34px;
     position: absolute;
     top: 76px;
     display: none;
+    z-index: 1;
 
 }
 
@@ -88,10 +92,9 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: #F16D7F;
+    color: $pink;
     padding-top: 24px;
     text-transform: uppercase;
-
 }
 
 .mega-link {
@@ -106,11 +109,12 @@
 }
 
 .mega-link:hover {
-    color: #F16D7F;
+    color: $pink;
 }
 
 .burger:hover .mega-box {
     display: block;
+
 }
 
 
@@ -142,18 +146,20 @@
 .bannerTextTop {
     font-weight: 900;
     font-size: 48px;
-    color: #222222;
+    color: $black;
 }
 
 .bannerTextBottom {
     font-weight: 700;
     font-size: 32px;
-    color: #222222;
+    color: $black;
 }
 
 
 .cards_sec {
     margin-bottom: 96px;
+    position: relative;
+
 
 }
 
@@ -162,7 +168,7 @@
     font-weight: 400;
     font-size: 30px;
     line-height: 36px;
-    color: #222222;
+    color: $black;
     text-align: center;
     margin-top: 90px;
 }
@@ -233,7 +239,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    color: #F16D7F;
+    color: $pink;
 }
 
 .add {
@@ -260,7 +266,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: #FFFFFF;
+    color: $white;
     margin-left: 11px;
 }
 
@@ -277,6 +283,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 48px;
+
 }
 
 
@@ -288,7 +295,7 @@
 
 .browse_all {
     border: 1px solid #F26376;
-    background-color: #FFFFFF;
+    background-color: $white;
     text-decoration: none;
 
 }
@@ -316,7 +323,7 @@
 
 
 .fashion {
-    color: #F16D7F;
+    color: $pink;
 }
 
 .forPeople {
@@ -471,13 +478,13 @@
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     border-style: none;
-    background: #F16D7F;
+    background: $pink;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
     align-items: center;
-    color: #ffffff;
+    color: $white;
     padding: 21px;
     font-family: "Lato";
 }
@@ -519,9 +526,13 @@
 
 .fa-brands {
     padding: 8px;
-    background-color: #ffffff;
+    background-color: $white;
     color: #000000;
-    ;
+}
+
+.fa-brands:hover {
+    color: $white;
+    background-color: $pink;
 }
 
 .fa-facebook-f {
@@ -537,4 +548,241 @@
 .fa-instagram {
     padding-left: 9px;
     padding-right: 9px;
+}
+
+
+
+
+.under_header {
+    background-color: #F1E4E6;
+
+}
+
+.new_arrivals {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.p_under_header {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: $pink;
+}
+
+.crumb {
+    font-family: 'Lato';
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+.new_crumb {
+    font-family: 'Lato';
+    font-weight: 700;
+    color: $pink;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+
+}
+
+
+
+
+
+.filter_select {
+    display: flex;
+    width: 1140px;
+    margin-top: 51px;
+
+}
+
+.sumfil {
+    list-style-type: none;
+    width: 360px;
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+
+}
+
+.fil_box {
+    display: flex;
+    justify-content: space-between;
+    width: 70px;
+}
+
+
+.fa-solid {
+    padding-top: 2px;
+    background-color: $white;
+    color: #000000;
+
+}
+
+
+
+.filter_box[open] {
+    width: 360px;
+    background-color: $white;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+
+
+}
+
+
+
+.filter_box[open]>summary {
+    color: #EF5B70;
+
+}
+
+.filter_box[open] .fa-solid {
+    color: #EF5B70;
+
+}
+
+.summary_box {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: $white;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+    z-index: 1;
+
+}
+
+
+
+.leftitem_category {
+    border-left: 5px solid #F16D7F;
+    border-bottom: 1px solid #EBEBEB;
+    padding-left: 11px;
+    padding-top: 15px;
+    height: 37px;
+    font-family: "Lato";
+
+}
+
+.text_category {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E
+}
+
+.open_category {
+    width: 360px;
+    padding-top: 18px;
+
+}
+
+.open_category[open] .text_category {
+    color: #EF5B70;
+}
+
+
+
+
+
+
+.open_trend[open] .open_check {
+    width: 132px;
+    background-color: $white;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.text_trend {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E
+}
+
+
+.trend_flex {
+    display: flex;
+    justify-content: space-between;
+    width: 132px;
+}
+
+.check {
+    padding-top: 10px;
+}
+
+.selector {
+    padding-left: 30px;
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.open_size {
+    width: 49px;
+}
+
+.open_size[open] .open_size_check {
+    width: 79px;
+    background-color: $white;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.size_flex {
+    display: flex;
+    justify-content: space-between;
+    width: 49px;
+}
+
+.open_price {
+    width: 59px;
+}
+
+.open_price[open] .open_price_check {
+    width: 100px;
+    background-color: $white;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.price_flex {
+    display: flex;
+    justify-content: space-between;
+    width: 59px;
+}
+
+.sumsel {
+    list-style-type: none;
+    width: 132px;
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+
+}
+
+.fa-angle-down {
+    color: #6F6E6E;
 }
