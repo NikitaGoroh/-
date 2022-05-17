@@ -7,7 +7,7 @@
 $pink: #F16D7F;
 $white: #FFFFFF;
 $black: #222222;
-
+$blackstrong: #000000;
 
 .container {
     width: 1140px;
@@ -78,7 +78,7 @@ $black: #222222;
 }
 
 .mega-heading {
-    color: #000000;
+    color: $blackstrong;
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
@@ -135,7 +135,7 @@ $black: #222222;
 }
 
 .bannerheading {
-    border-left: 12px solid #F16D7F;
+    border-left: 12px solid $pink;
     padding-left: 12px;
     float: left;
     margin-top: 290px;
@@ -219,7 +219,7 @@ $black: #222222;
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
-    color: #000000;
+    color: $blackstrong;
     margin-bottom: 13px;
 }
 
@@ -527,7 +527,7 @@ $black: #222222;
 .fa-brands {
     padding: 8px;
     background-color: $white;
-    color: #000000;
+    color: $blackstrong;
 }
 
 .fa-brands:hover {
@@ -611,7 +611,7 @@ $black: #222222;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
-    color: #000000;
+    color: $blackstrong;
 
 }
 
@@ -625,7 +625,7 @@ $black: #222222;
 .fa-solid {
     padding-top: 2px;
     background-color: $white;
-    color: #000000;
+    color: $blackstrong;
 
 }
 
@@ -779,10 +779,145 @@ $black: #222222;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
-    color: #000000;
+    color: $blackstrong;
 
 }
 
 .fa-angle-down {
     color: #6F6E6E;
+}
+
+
+
+
+
+
+.carosel_woman {
+    height: 777px;
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
+.fa-angle-left {
+    color: $blackstrong;
+    padding: 13px 17px;
+    font-size: 21px;
+    background-color: rgba(42, 42, 42, 0.15)
+}
+
+.fa-angle-right {
+    color: $blackstrong;
+    padding: 13px 17px;
+    font-size: 21px;
+    background-color: rgba(42, 42, 42, 0.15)
+}
+
+.fa-angle-left:hover {
+    color: $pink;
+}
+
+.fa-angle-right:hover {
+    color: $pink;
+}
+
+.product_info {
+    border: 1px solid #EAEAEA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.women_col {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: $pink;
+    margin-top: 64px;
+
+}
+
+.pink_hr {
+    background-color: #EF5B70;
+    width: 63px;
+    height: 3px;
+    margin-top: 12px;
+    border: none;
+}
+
+.cheap {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 12px;
+    color: #4D4D4D;
+}
+
+.discribe {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5E5E5E;
+    margin-top: 48px;
+}
+
+.price {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+    margin-top: 32px;
+}
+
+.grey_hr {
+    width: 641px;
+    border: 1px solid #EAEAEA;
+    margin-top: 65px;
+    margin-bottom: 65px;
+
+}
+
+.add_product_box {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 65px;
+}
+
+
+
+.add_product {
+    display: flex;
+    align-items: center;
+    border: 1px solid #F26376;
+    background-color: $white;
+    text-decoration: none;
+    padding-top: 15px;
+    padding-left: 23px;
+    padding-right: 56px;
+    padding-bottom: 14px;
+}
+
+.product-txt {
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $pink;
+    padding-left: 23px;
 }
