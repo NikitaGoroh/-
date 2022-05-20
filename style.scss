@@ -4,118 +4,21 @@
     outline: none;
 }
 
-$pink: #F16D7F;
-$white: #FFFFFF;
-$black: #222222;
-$blackstrong: #000000;
+
 
 .container {
     width: 1140px;
     margin: 0 auto;
-
-}
-
-.header {
-    background-color: $black;
-}
-
-.menu_header {
-    height: 75px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.iconleft {
-    display: flex;
-    justify-content: space-between;
-    width: 100px;
-    list-style-type: none;
-}
-
-.iconright {
-    display: flex;
-    justify-content: space-between;
-    width: 150px;
-    list-style-type: none;
-}
-
-.logo {
-    padding-top: 18px;
-
-}
-
-.loop {
-    padding-top: 28px;
-}
-
-.burger {
-    padding-top: 30px;
-    position: relative;
-}
-
-.personal {
-    padding-top: 26px;
-}
-
-.basket {
-    padding-top: 26px;
 }
 
 
+@import "vars";
+
+@import "header";
+
+@import "footer";
 
 
-
-
-.mega-box {
-    background-color: $white;
-    border: 1px solid $white;
-    padding: 34px;
-    position: absolute;
-    top: 76px;
-    display: none;
-    z-index: 1;
-
-}
-
-.mega-heading {
-    color: $blackstrong;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    text-transform: uppercase;
-    width: 232px;
-
-}
-
-.fashionMan {
-
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: $pink;
-    padding-top: 24px;
-    text-transform: uppercase;
-}
-
-.mega-link {
-    display: block;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #6F6E6E;
-    text-decoration: none;
-    padding-top: 12px;
-    padding-left: 20px;
-}
-
-.mega-link:hover {
-    color: $pink;
-}
-
-.burger:hover .mega-box {
-    display: block;
-
-}
 
 
 
@@ -123,36 +26,36 @@ $blackstrong: #000000;
 .banner {
     background-color: #F1E4E6;
     height: 764px;
-}
 
-.top_banner {
-    display: flex;
-    justify-content: space-between;
-}
+    .top_banner {
+        display: flex;
+        justify-content: space-between;
 
-.bannerMan {
-    margin-left: -230px;
-}
+        .bannerMan {
+            margin-left: -230px;
+        }
 
-.bannerheading {
-    border-left: 12px solid $pink;
-    padding-left: 12px;
-    float: left;
-    margin-top: 290px;
-    height: 93px;
-    font-family: "Lato";
-}
+        .bannerheading {
+            border-left: 12px solid $pink;
+            padding-left: 12px;
+            float: left;
+            margin-top: 290px;
+            height: 93px;
+            font-family: "Lato";
 
-.bannerTextTop {
-    font-weight: 900;
-    font-size: 48px;
-    color: $black;
-}
+            .bannerTextTop {
+                font-weight: 900;
+                font-size: 48px;
+                color: $black;
+            }
 
-.bannerTextBottom {
-    font-weight: 700;
-    font-size: 32px;
-    color: $black;
+            .bannerTextBottom {
+                font-weight: 700;
+                font-size: 32px;
+                color: $black;
+            }
+        }
+    }
 }
 
 
@@ -160,29 +63,27 @@ $blackstrong: #000000;
     margin-bottom: 96px;
     position: relative;
 
+    .fetured {
+        font-family: "Lato";
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        color: $black;
+        text-align: center;
+        margin-top: 90px;
+    }
 
+    .feturedShop {
+        font-family: "Lato";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #9F9F9F;
+        text-align: center;
+        margin-top: 6px;
+    }
 }
 
-.fetured {
-    font-family: "Lato";
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 36px;
-    color: $black;
-    text-align: center;
-    margin-top: 90px;
-}
-
-.feturedShop {
-    font-family: "Lato";
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #9F9F9F;
-    text-align: center;
-    margin-top: 6px;
-
-}
 
 .card {
     width: 360px;
@@ -198,82 +99,6 @@ $blackstrong: #000000;
     filter: brightness(30%);
 }
 
-.card-link {
-    display: block;
-    text-decoration: none;
-}
-
-.card-pic {
-    width: 100%;
-}
-
-.text-box {
-    padding: 20px;
-    background-color: #F8F8F8;
-    ;
-}
-
-.card-name {
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 16px;
-    color: $blackstrong;
-    margin-bottom: 13px;
-}
-
-.card-desc {
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #5D5D5D;
-    margin-bottom: 18px;
-}
-
-.card-price {
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: $pink;
-}
-
-.add {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    padding: 13px;
-    border: 1px solid #FFFFFF;
-    pointer-events: all;
-}
-
-.add-box {
-    display: none;
-    position: absolute;
-    top: 188px;
-    justify-content: center;
-    width: 100%;
-    pointer-events: none;
-
-}
-
-.add-txt {
-    font-family: "Lato";
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: $white;
-    margin-left: 11px;
-}
-
-.add:hover {
-    box-shadow: 0 0px 10px #FFFFFF;
-}
-
 .card:hover .add-box {
     display: flex;
 }
@@ -283,43 +108,110 @@ $blackstrong: #000000;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 48px;
-
 }
+
+.card-link {
+    display: block;
+    text-decoration: none;
+
+    .card-pic {
+        width: 100%;
+    }
+
+    .text-box {
+        padding: 20px;
+        background-color: #F8F8F8;
+
+        .card-name {
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 16px;
+            color: $blackstrong;
+            margin-bottom: 13px;
+        }
+
+        .card-desc {
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: #5D5D5D;
+            margin-bottom: 18px;
+        }
+
+        .card-price {
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: $pink;
+        }
+    }
+}
+
+
+.add-box {
+    display: none;
+    position: absolute;
+    top: 188px;
+    justify-content: center;
+    width: 100%;
+    pointer-events: none;
+
+    .add {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding: 13px;
+        border: 1px solid #FFFFFF;
+        pointer-events: all;
+
+        .add-txt {
+            font-family: "Lato";
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: $white;
+            margin-left: 11px;
+        }
+    }
+
+    .add:hover {
+        box-shadow: 0 0px 10px #FFFFFF;
+    }
+}
+
+
+
+
+
+
 
 
 .browse_all-box {
     display: flex;
     justify-content: center;
     margin-top: 18px;
+
+    .browse_all {
+        border: 1px solid #F26376;
+        background-color: $white;
+        text-decoration: none;
+
+        .browse_all-txt {
+            font-family: "Lato";
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #F26376;
+            padding: 14px 38px;
+        }
+    }
 }
-
-.browse_all {
-    border: 1px solid #F26376;
-    background-color: $white;
-    text-decoration: none;
-
-}
-
-.browse_all-txt {
-    font-family: "Lato";
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #F26376;
-    padding: 14px 38px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .fashion {
@@ -330,8 +222,33 @@ $blackstrong: #000000;
     display: flex;
     justify-content: space-between;
     margin-top: 65px;
+
+    .forWomen {
+        position: relative;
+        text-align: center;
+    }
+
+    .forMen {
+        position: relative;
+        text-align: center;
+    }
+
+    .forKids {
+        position: relative;
+        text-align: center;
+    }
 }
 
+.accesories {
+    margin-top: 30px;
+    position: relative;
+    text-align: center;
+
+    .textAccesories {
+        top: 80px;
+        left: 125px;
+    }
+}
 
 .textMen {
     position: absolute;
@@ -342,33 +259,8 @@ $blackstrong: #000000;
     font-family: "Lato";
 }
 
-.textAccesories {
-    top: 80px;
-    left: 125px;
-}
 
 
-
-.forMen {
-    position: relative;
-    text-align: center;
-}
-
-.forWomen {
-    position: relative;
-    text-align: center;
-}
-
-.forKids {
-    position: relative;
-    text-align: center;
-}
-
-.accesories {
-    margin-top: 30px;
-    position: relative;
-    text-align: center;
-}
 
 
 
@@ -379,32 +271,6 @@ $blackstrong: #000000;
     background-color: #222224;
 }
 
-.infoCards {
-    width: 360px;
-    height: 134px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.textHeadingInfo {
-    font-weight: 400;
-    font-size: 19.96px;
-    line-height: 24px;
-    color: #FBFBFB;
-    font-family: "Lato";
-}
-
-.textInfo {
-    font-weight: 300;
-    font-size: 13.972px;
-    line-height: 17px;
-    color: #FBFBFB;
-    font-family: "Lato";
-
-}
-
 .info_container {
     height: 341px;
     display: flex;
@@ -412,144 +278,31 @@ $blackstrong: #000000;
     align-items: center;
 }
 
-
-
-
-
-
-.background_sea {
-    background-image: url(img/sea.png);
-    background-repeat: no-repeat;
-    padding-bottom: 126px;
-
-}
-
-.footer_flex {
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer_top_left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 97px;
+.infoCards {
     width: 360px;
-
-}
-
-.quote {
-    text-align: center;
-    margin-top: 30px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    color: #222224;
-    font-family: "Lato";
-}
-
-.footer_top_right {
+    height: 134px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 135px;
-    width: 557px;
-}
-
-.subscribe {
-    text-align: center;
-    margin-bottom: 32px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-    color: #222224;
-    font-family: "Lato";
-
-}
-
-.subscribe_bolt {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 40px;
-    font-family: "Lato";
-}
-
-.footer_button {
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border-style: none;
-    background: $pink;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    align-items: center;
-    color: $white;
-    padding: 21px;
-    font-family: "Lato";
-}
-
-.email {
-    border-top-left-radius: 35px;
-    border-bottom-left-radius: 35px;
-    padding: 21px;
-    background: #E1E1E1;
-    border-style: none;
-
-}
-
-.footer_bottom {
-    background-color: #222224;
-    display: flex;
     justify-content: space-between;
+    align-items: center;
 
+    .textHeadingInfo {
+        font-weight: 400;
+        font-size: 19.96px;
+        line-height: 24px;
+        color: #FBFBFB;
+        font-family: "Lato";
+    }
+
+    .textInfo {
+        font-weight: 300;
+        font-size: 13.972px;
+        line-height: 17px;
+        color: #FBFBFB;
+        font-family: "Lato";
+
+    }
 }
-
-.rights {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FBFBFB;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-family: "Lato";
-}
-
-.icons {
-    padding: 23px;
-    width: 160px;
-    display: flex;
-    justify-content: space-between;
-}
-
-
-
-.fa-brands {
-    padding: 8px;
-    background-color: $white;
-    color: $blackstrong;
-}
-
-.fa-brands:hover {
-    color: $white;
-    background-color: $pink;
-}
-
-.fa-facebook-f {
-    padding-left: 11px;
-    padding-right: 11px;
-}
-
-.fa-pinterest-p {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.fa-instagram {
-    padding-left: 9px;
-    padding-right: 9px;
-}
-
 
 
 
@@ -660,7 +413,6 @@ $blackstrong: #000000;
     z-index: 1;
 
 }
-
 
 
 .leftitem_category {
@@ -799,31 +551,31 @@ $blackstrong: #000000;
     justify-content: space-between;
     align-items: center;
 
+    .fa-angle-left {
+        color: $blackstrong;
+        padding: 13px 17px;
+        font-size: 21px;
+        background-color: rgba(42, 42, 42, 0.15)
+    }
 
+    .fa-angle-right {
+        color: $blackstrong;
+        padding: 13px 17px;
+        font-size: 21px;
+        background-color: rgba(42, 42, 42, 0.15)
+    }
+
+    .fa-angle-left:hover {
+        color: $pink;
+    }
+
+    .fa-angle-right:hover {
+        color: $pink;
+    }
 }
 
 
-.fa-angle-left {
-    color: $blackstrong;
-    padding: 13px 17px;
-    font-size: 21px;
-    background-color: rgba(42, 42, 42, 0.15)
-}
 
-.fa-angle-right {
-    color: $blackstrong;
-    padding: 13px 17px;
-    font-size: 21px;
-    background-color: rgba(42, 42, 42, 0.15)
-}
-
-.fa-angle-left:hover {
-    color: $pink;
-}
-
-.fa-angle-right:hover {
-    color: $pink;
-}
 
 .product_info {
     border: 1px solid #EAEAEA;
@@ -831,93 +583,325 @@ $blackstrong: #000000;
     flex-direction: column;
     align-items: center;
 
+    .women_col {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: $pink;
+        margin-top: 64px;
 
+    }
+
+    .pink_hr {
+        background-color: #EF5B70;
+        width: 63px;
+        height: 3px;
+        margin-top: 12px;
+        border: none;
+    }
+
+    .cheap {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 12px;
+        color: #4D4D4D;
+    }
+
+    .discribe {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #5E5E5E;
+        margin-top: 48px;
+    }
+
+    .price {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #EF5B70;
+        margin-top: 32px;
+    }
+
+    .grey_hr {
+        width: 641px;
+        border: 1px solid #EAEAEA;
+        margin-top: 65px;
+        margin-bottom: 65px;
+    }
 }
 
-.women_col {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: $pink;
-    margin-top: 64px;
 
-}
-
-.pink_hr {
-    background-color: #EF5B70;
-    width: 63px;
-    height: 3px;
-    margin-top: 12px;
-    border: none;
-}
-
-.cheap {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 22px;
-    margin-top: 12px;
-    color: #4D4D4D;
-}
-
-.discribe {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    color: #5E5E5E;
-    margin-top: 48px;
-}
-
-.price {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
-    color: #EF5B70;
-    margin-top: 32px;
-}
-
-.grey_hr {
-    width: 641px;
-    border: 1px solid #EAEAEA;
-    margin-top: 65px;
-    margin-bottom: 65px;
-
-}
 
 .add_product_box {
     display: flex;
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 65px;
+
+    .add_product {
+        display: flex;
+        align-items: center;
+        border: 1px solid #F26376;
+        background-color: $white;
+        text-decoration: none;
+        padding-top: 15px;
+        padding-left: 23px;
+        padding-right: 56px;
+        padding-bottom: 14px;
+
+        .product-txt {
+            font-family: "Lato";
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: $pink;
+            padding-left: 23px;
+        }
+    }
 }
 
-
-
-.add_product {
+.mega_cart_box {
+    margin-top: 96px;
     display: flex;
-    align-items: center;
-    border: 1px solid #F26376;
-    background-color: $white;
-    text-decoration: none;
-    padding-top: 15px;
-    padding-left: 23px;
-    padding-right: 56px;
-    padding-bottom: 14px;
+    justify-content: space-between;
 }
 
-.product-txt {
-    font-family: "Lato";
+.cart_box {
+    width: 652px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mango_man {
+    margin-bottom: 40px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+
+
+
+
+.cart_float {
+    float: left;
+}
+
+.mini_cart_box {
+    padding-left: 294px;
+}
+
+.mark_flex {
+    display: flex;
+    justify-content: space-between;
+
+    .cart_heading {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: $black;
+        padding-top: 22px;
+    }
+
+    .fa-xmark {
+        font-size: 24px;
+        color: #575757;
+        padding-top: 28px;
+        padding-right: 22px;
+    }
+}
+
+.cart_price {
+    color: $pink;
+}
+
+
+
+.cart_info {
+    font-family: 'Lato';
+    font-style: normal;
     font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #575757;
+    padding-top: 44px;
+}
+
+.cart {
+    padding-bottom: 6px;
+}
+
+.quantity {
+    width: 44px;
+    border: 1px solid #EAEAEA;
+    margin-left: 24px;
+    text-align: center;
+    color: #656565;
+}
+
+.shopping_flex {
+    width: 652px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    margin-bottom: 144px;
+}
+
+
+
+.shopping_box {
+    background-color: $white;
+    border: 1px solid #A4A4A4;
+
+    .clear_cart {
+        text-decoration: none;
+
+        .clear_cart-txt {
+            padding: 17px 40px;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: $blackstrong;
+        }
+    }
+}
+
+
+
+.form_quote {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+
+    .shipping {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+    }
+
+    .adress {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: $black;
+        padding-left: 17px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        margin-top: 20px;
+    }
+
+    .quote_box {
+        width: 100px;
+        margin-top: 20px;
+        background-color: $white;
+        border: 1px solid #A4A4A4;
+
+        .get_quote {
+
+            text-decoration: none;
+
+            .quote-txt {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 11px;
+                line-height: 13px;
+                color: #4A4A4A;
+                padding: 9px 13px;
+            }
+        }
+    }
+}
+
+.sub_total_flex {
+    width: 108px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 39px;
+    margin-right: 34px;
+}
+
+.grand_total_flex {
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    margin-right: 37px;
+}
+
+.sub_total {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #4A4A4A;
+}
+
+.grand_total {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
     font-size: 16px;
     line-height: 19px;
-    color: $pink;
-    padding-left: 23px;
+    color: #4A4A4A;
+}
+
+
+.procced_checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 57px;
+    background-color: #F5F3F3;
+
+}
+
+.procced_box {
+    display: flex;
+    align-self: center;
+    margin-top: 17px;
+    padding: 15px 42px;
+    background-color: $pink;
+    border: none;
+    margin-bottom: 42px;
+
+    .procced {
+        text-decoration: none;
+
+        .procced-txt {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: $white;
+        }
+    }
+}
+
+.proceed_hr {
+    background-color: #E2E2E2;
+    width: 275px;
+    height: 1px;
+    margin-top: 12px;
+    border: none;
+    align-self: center;
 }
