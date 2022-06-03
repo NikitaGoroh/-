@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShoppingCart</title>
+    <title>ShoppingRegistration</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap"
@@ -61,83 +61,65 @@
     <div class="under_header">
         <div class="container">
             <div class="new_arrivals">
-                <p class="p_under_header">SHOPPING CART</p>
+                <p class="p_under_header">REGISTRATION</p>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="mega_cart_box">
-            <div class="cart_box">
-                <div class="mango_man">
-                    <img class="cart_float" src="img/mango_man-2.jpg" alt="mango_man">
-                    <div class="mini_cart_box">
-                        <div class="mark_flex">
-                            <p class="cart_heading">MANGO PEOPLE <br> T-SHIRT</p>
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="cart_info">
-                            <p class="cart">Price: <span class="cart_price">$300</span></p>
-                            <p class="cart">Color: Red</p>
-                            <p class="cart">Size: Xl </p>
-                            <p class="cart">Quantity: <input class="quantity" type="text"></p>
-                        </div>
-                    </div>
+        <div class="mega_registration_box">
+            <form class="registration">
+                <p class="name_for_reg">Your Name</p>
+                <input type="name" placeholder="First Name" class="adress">
+                <input type="text" placeholder="Last Name" class="adress">
+                <div class="radio">
+                    <input type="radio" value="male" id="male" name="sex">
+                    <label for="male" class="male">Male</label>
+                    <input type="radio" value="female" id="female" name="sex" class="sex">
+                    <label for="female" class="male female">Female</label>
                 </div>
-                <div class="mango_man">
-                    <img class="cart_float" src="img/mango_man-1.jpg" alt="mango_man">
-                    <div class="mini_cart_box">
-                        <div class="mark_flex">
-                            <p class="cart_heading">MANGO PEOPLE <br> T-SHIRT</p>
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="cart_info">
-                            <p class="cart">Price: <span class="cart_price">$300</span></p>
-                            <p class="cart">Color: Red</p>
-                            <p class="cart">Size: Xl </p>
-                            <p class="cart">Quantity: <input class="quantity" type="text"></p>
-                        </div>
-                    </div>
+                <p class="name_for_reg login">Login details</p>
+                <input type="email" placeholder="Email" class="adress">
+                <input type="password" placeholder="Password" class="adress">
+                <p class="for_password">Please use 8 or more characters, with at least 1 number and a <br> mixture of
+                    uppercase and lowercase letters</p>
+                <button class="join_box">
+                    <a class="join" href="#">
+                        <p class="join-txt">JOIN NOW</p>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </a>
+                </button>
+            </form>
+            <div class="registration_info">
+                <h4 class="loyalty">LOYALTY HAS ITS PERKS</h4>
+                <p class="loyalty loyalty_perks">Get in on the loyalty program where you can earn points and <br> unlock
+                    serious
+                    perks. Starting with
+                    these
+                    as soon as you join:</p>
+                <div class="mark_box">
+                    <img src="img/mark.svg" alt="mark">
+                    <p class="loyalty loyalty_mark"> 15% off welcome offer
+                    </p>
                 </div>
-                <div class="shopping_flex">
-                    <button class="shopping_box">
-                        <a class="clear_cart" href="#">
-                            <p class="clear_cart-txt">CLEAR SHOPPING CART</p>
-                        </a>
-                    </button>
-                    <button class="shopping_box">
-                        <a class="clear_cart" href="#">
-                            <p class="clear_cart-txt">CONTINUE SHOPPING</p>
-                        </a>
-                    </button>
+                <div class="mark_box">
+                    <img src="img/mark.svg" alt="mark">
+                    <p class="loyalty loyalty_mark"> Free shipping, returns and exchanges on all
+                    </p>
                 </div>
-            </div>
-            <div>
-                <form class="form_quote" action="">
-                    <p class="shipping">SHIPPING ADRESS</p>
-                    <input type="text" placeholder="Bangladesh" class="adress">
-                    <input type="text" placeholder="State" class="adress">
-                    <input type="text" placeholder="Postcode / Zip" class="adress">
-                    <button class="quote_box">
-                        <a class="get_quote" href="#">
-                            <p class="quote-txt">GET A QUOTE</p>
-                        </a>
-                    </button>
-                </form>
-                <div class="procced_checkout">
-                    <div class="sub_total_flex">
-                        <p class="sub_total">SUB TOTAL</p>
-                        <p class="sub_total">$900</p>
-                    </div>
-                    <div class="grand_total_flex">
-                        <p class="grand_total">GRAND TOTAL</p>
-                        <span class="cart_price">$900</span>
-                    </div>
-                    <hr class="proceed_hr">
-                    <button class="procced_box">
-                        <a class="procced" href="#">
-                            <p class="procced-txt">PROCEED TO CHECKOUT</p>
-                        </a>
-                    </button>
+                <div class="mark_box">
+                    <img src="img/mark.svg" alt="mark">
+                    <p class="loyalty loyalty_mark"> $10 off a purchase on your birthday
+                    </p>
+                </div>
+                <div class="mark_box">
+                    <img src="img/mark.svg" alt="mark">
+                    <p class="loyalty loyalty_mark"> Early access to products
+                    </p>
+                </div>
+                <div class="mark_box">
+                    <img src="img/mark.svg" alt="mark">
+                    <p class="loyalty loyalty_mark"> Exclusive offers & rewards
+                    </p>
                 </div>
             </div>
         </div>

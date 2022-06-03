@@ -24,25 +24,53 @@
 
 .logo {
     padding-top: 18px;
+    transition: transform 0.3s;
 
+}
+
+.logo:hover {
+    transform: scale(1.2);
 }
 
 .loop {
     padding-top: 28px;
+    transition: transform 0.3s;
+}
+
+.loop:hover {
+    transform: scale(1.2);
 }
 
 .burger {
     padding-top: 30px;
     position: relative;
+
+}
+
+.burger_trans {
+    transition: transform 0.3s;
+}
+
+.burger:hover .burger_trans {
+    transform: scale(1.2);
 }
 
 .personal {
     padding-top: 26px;
+    transition: transform 0.3s;
+}
+
+.personal:hover {
+    transform: scale(1.2);
 }
 
 .basket {
     padding-top: 26px;
+    transition: transform 0.3s;
+}
 
+.basket:hover {
+    transform: scale(1.2);
 }
 
 .mega-box {
@@ -87,6 +115,7 @@
     text-decoration: none;
     padding-top: 12px;
     padding-left: 20px;
+    transition: color 0.5s;
 }
 
 .mega-link:hover {
