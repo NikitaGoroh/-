@@ -7,7 +7,7 @@
 
 
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -18,134 +18,58 @@
 
 @import "footer";
 
-@keyframes carAnim {
+@import "animations";
 
-    0%,
-    100% {
-        opacity: 1;
-    }
+.wrapper {
+    padding: 0 2%;
 
-    12%,
-    100% {
-        opacity: 0;
-    }
 
-    10% {
-        transform: translateX(120px);
-    }
 }
 
-@keyframes salesAnim {
-    from {
-        transform: scale(1);
-        transform-origin: center center;
-        animation-timing-function: ease-out;
-    }
-
-    10% {
-        transform: scale(0.91);
-        animation-timing-function: ease-in;
-    }
-
-    17% {
-        transform: scale(0.98);
-        animation-timing-function: ease-out;
-    }
-
-    33% {
-        transform: scale(0.87);
-        animation-timing-function: ease-in;
-    }
-
-    45% {
-        transform: scale(1);
-        animation-timing-function: ease-out;
-    }
-}
-
-@keyframes QAAnim {
-    0% {
-        transform: translateY(-500px);
-        animation-timing-function: ease-in;
-        opacity: 0;
-    }
-
-    38% {
-        transform: translateY(0);
-        animation-timing-function: ease-out;
-        opacity: 1;
-    }
-
-    55% {
-        transform: translateY(-65px);
-        animation-timing-function: ease-in;
-    }
-
-    72% {
-        transform: translateY(0);
-        animation-timing-function: ease-out;
-    }
-
-    81% {
-        transform: translateY(-28px);
-        animation-timing-function: ease-in;
-    }
-
-    90% {
-        transform: translateY(0);
-        animation-timing-function: ease-out;
-    }
-
-    95% {
-        transform: translateY(-8px);
-        animation-timing-function: ease-in;
-    }
-
-    100% {
-        transform: translateY(0);
-        animation-timing-function: ease-out;
-    }
-}
 
 
 
 .banner {
     background-color: #F1E4E6;
     height: 764px;
-
-    .top_banner {
-        display: flex;
-        justify-content: space-between;
-
-        .bannerMan {
-            margin-left: -230px;
-        }
-
-        .bannerheading {
-            border-left: 12px solid $pink;
-            padding-left: 12px;
-            float: left;
-            margin-top: 290px;
-            height: 93px;
-            font-family: "Lato";
-
-            .bannerTextTop {
-                font-weight: 900;
-                font-size: 48px;
-                color: $black;
-                transition: margin-top 2s ease
-            }
-
-
-            .bannerTextBottom {
-                font-weight: 700;
-                font-size: 32px;
-                color: $black;
-                transition: margin-top 2s ease
-            }
-        }
-    }
 }
+
+
+.top_banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bannerMan {
+    margin-left: -230px;
+}
+
+.bannerheading {
+    border-left: 12px solid $pink;
+    padding-left: 12px;
+    float: left;
+    margin-top: 290px;
+    max-height: 93px;
+    font-family: "Lato";
+    width: 405px;
+    padding-right: 3px;
+}
+
+.bannerTextTop {
+    font-weight: 900;
+    font-size: 48px;
+    color: $black;
+    transition: margin-top 2s ease
+}
+
+
+.bannerTextBottom {
+    font-weight: 700;
+    font-size: 32px;
+    color: $black;
+    transition: margin-top 2s ease
+}
+
 
 .bannerheading:hover .bannerTextTop {
     margin-top: -50px;
@@ -186,7 +110,7 @@
 
 
 .card {
-    width: 360px;
+    width: 30%;
     position: relative;
     margin-bottom: 30px;
     transition: box-shadow 0.3s;
@@ -339,32 +263,39 @@
     display: flex;
     justify-content: space-between;
     margin-top: 65px;
-
-    .forWomen {
-        position: relative;
-        text-align: center;
-    }
-
-    .forMen {
-        position: relative;
-        text-align: center;
-    }
-
-    .forKids {
-        position: relative;
-        text-align: center;
-    }
 }
+
+.forWomen {
+    position: relative;
+    text-align: center;
+    width: 32%;
+
+}
+
+.forMen {
+    position: relative;
+    text-align: center;
+    width: 32%;
+
+}
+
+.forKids {
+    position: relative;
+    text-align: center;
+    width: 32%;
+}
+
 
 .accesories {
     margin-top: 30px;
     position: relative;
     text-align: center;
+    width: 100%
+}
 
-    .textAccesories {
-        top: 80px;
-        left: 125px;
-    }
+.textAccesories {
+    top: 80px;
+    left: 125px;
 }
 
 .textMen {
@@ -991,9 +922,7 @@
     font-size: 13px;
     line-height: 16px;
     color: $black;
-    padding-left: 17px;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding: 13px 17px;
     margin-top: 20px;
 }
 
@@ -1237,4 +1166,100 @@
 
 .loyalty_perks {
     margin-top: 21px;
+}
+
+
+@media (max-width: 375px) {
+
+    .container {
+        max-width: 375px;
+    }
+
+
+    .forPeople {
+        display: flex;
+        flex-wrap: wrap;
+
+
+    }
+
+
+    .forPeople {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+    }
+
+    .forWomen {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        margin-top: 32px;
+
+
+    }
+
+    .forMen {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        margin-top: 32px;
+
+    }
+
+    .forKids {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        margin-top: 32px;
+    }
+
+
+    .accesories {
+        margin-top: 30px;
+        position: relative;
+        text-align: center;
+        width: 100%;
+    }
+
+
+
+
+
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        max-width: 768px;
+    }
+
+
+
+
+
+    .bannerMan {
+        margin-left: -130px;
+
+    }
+
+    .bannerheading {
+        margin-top: 138px;
+
+
+
+    }
+
+    .bannerTextTop {
+        font-size: 44px;
+    }
+
+    .bannerTextBottom {
+
+        font-size: 24px;
+
+    }
+
+
+
 }

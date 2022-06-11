@@ -1,9 +1,10 @@
 .header {
     background-color: $black;
+
 }
 
 .menu_header {
-    height: 75px;
+    min-height: 75px;
     display: flex;
     justify-content: space-between;
 }
