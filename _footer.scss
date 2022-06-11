@@ -1,0 +1,145 @@
+.background_sea {
+    background-image: url(img/sea.png);
+    background-repeat: no-repeat;
+    padding-bottom: 126px;
+    background-size: cover;
+}
+
+.footer_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_top_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 97px;
+    width: 360px;
+
+}
+
+
+.quote {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222224;
+    font-family: "Lato";
+
+
+}
+
+
+.footer_top_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 135px;
+    width: 557px;
+}
+
+
+.subscribe {
+    text-align: center;
+    margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #222224;
+    font-family: "Lato";
+
+}
+
+.subscribe_bolt {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    font-family: "Lato";
+}
+
+.footer_button {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-style: none;
+    background: $pink;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    align-items: center;
+    color: $white;
+    padding: 21px;
+    font-family: "Lato";
+    transition: transform 0.3s;
+}
+
+.footer_button:hover {
+    transform: scale(1.1);
+}
+
+.email {
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    padding: 21px;
+    background: #E1E1E1;
+    border-style: none;
+
+}
+
+.footer_bottom {
+    background-color: #222224;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.rights {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: "Lato";
+}
+
+.icons {
+    padding: 23px;
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.fa-brands {
+    padding: 8px;
+    background-color: $white;
+    color: $blackstrong;
+    transition: background-color 0.3s;
+    transition: color 0.3s;
+}
+
+.fa-brands:hover {
+    color: $white;
+    background-color: $pink;
+}
+
+.fa-facebook-f {
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+.fa-pinterest-p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.fa-instagram {
+    padding-left: 9px;
+    padding-right: 9px;
+}

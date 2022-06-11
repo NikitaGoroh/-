@@ -1,0 +1,128 @@
+.header {
+    background-color: $black;
+
+}
+
+.menu_header {
+    min-height: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconleft {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    list-style-type: none;
+}
+
+.iconright {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    list-style-type: none;
+}
+
+.logo {
+    padding-top: 18px;
+    transition: transform 0.3s;
+
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+.loop {
+    padding-top: 28px;
+    transition: transform 0.3s;
+}
+
+.loop:hover {
+    transform: scale(1.2);
+}
+
+.burger {
+    padding-top: 30px;
+    position: relative;
+
+}
+
+.burger_trans {
+    transition: transform 0.3s;
+}
+
+.burger:hover .burger_trans {
+    transform: scale(1.2);
+}
+
+.personal {
+    padding-top: 26px;
+    transition: transform 0.3s;
+}
+
+.personal:hover {
+    transform: scale(1.2);
+}
+
+.basket {
+    padding-top: 26px;
+    transition: transform 0.3s;
+}
+
+.basket:hover {
+    transform: scale(1.2);
+}
+
+.mega-box {
+    background-color: $white;
+    border: 1px solid $white;
+    padding: 34px;
+    position: absolute;
+    top: 76px;
+    display: none;
+    z-index: 1;
+
+}
+
+.mega-heading {
+    color: $blackstrong;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    width: 232px;
+
+}
+
+.fashionMan {
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $pink;
+    padding-top: 24px;
+    text-transform: uppercase;
+}
+
+
+
+.mega-link {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    text-decoration: none;
+    padding-top: 12px;
+    padding-left: 20px;
+    transition: color 0.5s;
+}
+
+.mega-link:hover {
+    color: $pink;
+}
+
+.burger:hover .mega-box {
+    display: block;
+}
