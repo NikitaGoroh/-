@@ -3,11 +3,13 @@
     background-repeat: no-repeat;
     padding-bottom: 126px;
     background-size: cover;
+
 }
 
 .footer_flex {
     display: flex;
     justify-content: space-between;
+
 }
 
 .footer_top_left {
@@ -15,7 +17,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 97px;
-    width: 360px;
+    width: 32%;
 
 }
 
@@ -38,7 +40,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 135px;
-    width: 557px;
+    width: 48%;
 }
 
 

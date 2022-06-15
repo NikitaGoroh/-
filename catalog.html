@@ -18,7 +18,7 @@
 
 <body>
     <header class="header">
-        <nav class="menu_header container">
+        <nav class="menu_header container wrapper">
             <ul class="iconleft">
                 <li class="logo"><a href="index.html"><img src="img/logo.svg" alt="logo"></a></li>
                 <li class="loop"><a href="product.html" target="_blank"><img src="img/loop.svg" alt="loop"></a></li>
@@ -38,7 +38,7 @@
                         <div class="mega-item">
                             <h3 class="fashionMan">WOMAN</h3>
                             <a class="mega-link" href="#">Accessories</a>
-                            <a class="mega-link" href="#">Jackets & Coats</a>
+                            <a class="mega-link" href="#">Jackets &amp;&nbsp;Coats</a>
                             <a class="mega-link" href="#">Polos</a>
                             <a class="mega-link" href="#">T-Shirts</a>
                             <a class="mega-link" href="#">Shirts</a>
@@ -46,7 +46,7 @@
                         <div class="mega-item">
                             <h3 class="fashionMan">KIDS</h3>
                             <a class="mega-link" href="#">Accessories</a>
-                            <a class="mega-link" href="#">Jackets & Coats</a>
+                            <a class="mega-link" href="#">Jackets &amp;&nbsp;Coats</a>
                             <a class="mega-link" href="#">Denim</a>
                             <a class="mega-link" href="#">T-Shirts</a>
                             <a class="mega-link" href="#">Shirts</a>
@@ -60,7 +60,7 @@
         </nav>
     </header>
     <div class="under_header">
-        <div class="container">
+        <div class="container wrapper">
             <div class="new_arrivals">
                 <p class="p_under_header">NEW ARRIVALS </p>
                 <nav class="bread_crumb">
@@ -71,9 +71,9 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container wrapper">
         <div class="filter_select">
-            <div class="filter">
+            <nav class="filter">
                 <details class="filter_box">
                     <summary class="sumfil">
                         <div class="fil_box">
@@ -90,12 +90,12 @@
                             <a class="mega-link" href="Catalog.html" target="_blank">Accessories</a>
                             <a class="mega-link" href="Catalog.html" target="_blank">Bags</a>
                             <a class="mega-link" href="Catalog.html" target="_blank">Denim</a>
-                            <a class="mega-link" href="Catalog.html" target="_blank">Hoodies & Sweatshirts</a>
-                            <a class="mega-link" href="Catalog.html" target="_blank">Jackets & Coats</a>
+                            <a class="mega-link" href="Catalog.html" target="_blank">Hoodies &amp;&nbsp;Sweatshirts</a>
+                            <a class="mega-link" href="Catalog.html" target="_blank">Jackets &amp;&nbsp;Coats</a>
                             <a class="mega-link" href="Catalog.html" target="_blank">Polos</a>
                             <a class="mega-link" href="Catalog.html" target="_blank">Shirts</a>
                             <a class="mega-link" href="Catalog.html" target="_blank">Shoes</a>
-                            <a class="mega-link" href="Catalog.html" target="_blank">Sweaters & Knits</a>
+                            <a class="mega-link" href="Catalog.html" target="_blank">Sweaters &amp;&nbsp;Knits</a>
                             <a class="mega-link" href="Catalog.html" target="_blank">T-Shirts</a>
                             <a class="mega-link" href="Catalog.html" target="_blank">Tanks</a>
                         </details>
@@ -125,66 +125,73 @@
                         </details>
                     </div>
                 </details>
-            </div>
+            </nav>
             <div class="selector">
-                <details class="open_trend">
-                    <summary class="sumsel">
-                        <div class="trend_flex">
-                            <p class="text_trend">TRENDING NOW</p><i class="fa-solid fa-angle-down"></i>
+                <div class="open-block">
+                    <details class="open_trend">
+                        <summary class="sumsel">
+                            <div class="trend_flex">
+                                <p class="text_trend">TRENDING NOW</p><i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </summary>
+                        <div class="open_trend_check">
+                            <label class="check"><input type="checkbox"> Orange</label>
+                            <label class="check"><input type="checkbox"> Green</label>
+                            <label class="check"><input type="checkbox"> Blue</label>
                         </div>
-                    </summary>
-                    <div class="open_check">
-                        <label class="check"><input type="checkbox">&nbsp Orange</label>
-                        <label class="check"><input type="checkbox">&nbsp Green</label>
-                        <label class="check"><input type="checkbox">&nbsp Blue</label>
-                    </div>
-                </details>
-                <details class="open_size">
-                    <summary class="sumsel">
-                        <div class="size_flex">
-                            <p class="text_trend">SIZE</p><i class="fa-solid fa-angle-down"></i>
+                    </details>
+                </div>
+                <div class="open-block">
+                    <details class="open_size">
+                        <summary class="sumsel short">
+                            <div class="size_flex">
+                                <p class="text_trend">SIZE</p><i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </summary>
+                        <div class="open_size_check">
+                            <label class="check"><input type="checkbox"> XS</label>
+                            <label class="check"><input type="checkbox"> S</label>
+                            <label class="check"><input type="checkbox"> M</label>
+                            <label class="check"><input type="checkbox"> L</label>
                         </div>
-                    </summary>
-                    <div class="open_size_check">
-                        <label class="check"><input type="checkbox">&nbsp XS</label>
-                        <label class="check"><input type="checkbox">&nbsp S</label>
-                        <label class="check"><input type="checkbox">&nbsp M</label>
-                        <label class="check"><input type="checkbox">&nbsp L</label>
-                    </div>
-                </details>
-                <details class="open_price">
-                    <summary class="sumsel">
-                        <div class="price_flex">
-                            <p class="text_trend">PRICE</p><i class="fa-solid fa-angle-down"></i>
+                    </details>
+                </div>
+                <div class="open-block">
+                    <details class="open_price">
+                        <summary class="sumsel">
+                            <div class="price_flex">
+                                <p class="text_trend">PRICE</p><i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </summary>
+                        <div class="open_price_check">
+                            <label class="check"><input type="checkbox"> 100$</label>
+                            <label class="check"><input type="checkbox"> 500$</label>
+                            <label class="check"><input type="checkbox"> 1000$</label>
                         </div>
-                    </summary>
-                    <div class="open_price_check">
-                        <label class="check"><input type="checkbox">&nbsp 100$</label>
-                        <label class="check"><input type="checkbox">&nbsp 500$</label>
-                        <label class="check"><input type="checkbox">&nbsp 1000$</label>
-                    </div>
-                </details>
+                    </details>
+                </div>
             </div>
         </div>
     </div>
     </div>
-    <section class="cards_sec">
+    <section class="cards_sec wrapper">
         <div class="container">
             <div class="card-flex">
                 <div class="card">
                     <a class="card-link" href="#">
                         <img class="card-pic" src="img/product-1.png" alt="blue jacket">
                         <div class="text-box">
-                            <p class="card-name">ELLERY X M'O CAPSULE</p>
-                            <p class="card-desc">Known for her sculptural takes on traditional tailoring, Australian
-                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="card-name">ELLERY X&nbsp;M&rsquo;O CAPSULE</p>
+                            <p class="card-desc">Known for her sculptural takes on&nbsp;traditional tailoring,
+                                Australian
+                                arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
                             <p class="card-price">$52.00</p>
                         </div>
                     </a>
                     <div class="add-box">
                         <a class="add" href="#">
                             <img src="img/add.svg" alt="add">
-                            <p class="add-txt">Add to Cart</p>
+                            <p class="add-txt">Add to&nbsp;Cart</p>
                         </a>
                     </div>
                 </div>
@@ -192,16 +199,17 @@
                     <a class="card-link" href="#">
                         <img class="card-pic" src="img/product-7.jpg" alt="blue jacket">
                         <div class="text-box">
-                            <p class="card-name">ELLERY X M'O CAPSULE</p>
-                            <p class="card-desc">Known for her sculptural takes on traditional tailoring, Australian
-                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="card-name">ELLERY X&nbsp;M&rsquo;O CAPSULE</p>
+                            <p class="card-desc">Known for her sculptural takes on&nbsp;traditional tailoring,
+                                Australian
+                                arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
                             <p class="card-price">$52.00</p>
                         </div>
                     </a>
                     <div class="add-box">
                         <a class="add" href="#">
                             <img src="img/add.svg" alt="add">
-                            <p class="add-txt">Add to Cart</p>
+                            <p class="add-txt">Add to&nbsp;Cart</p>
                         </a>
                     </div>
                 </div>
@@ -209,16 +217,17 @@
                     <a class="card-link" href="#">
                         <img class="card-pic" src="img/product-3.png" alt="blue jacket">
                         <div class="text-box">
-                            <p class="card-name">ELLERY X M'O CAPSULE</p>
-                            <p class="card-desc">Known for her sculptural takes on traditional tailoring, Australian
-                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="card-name">ELLERY X&nbsp;M&rsquo;O CAPSULE</p>
+                            <p class="card-desc">Known for her sculptural takes on&nbsp;traditional tailoring,
+                                Australian
+                                arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
                             <p class="card-price">$52.00</p>
                         </div>
                     </a>
                     <div class="add-box">
                         <a class="add" href="#">
                             <img src="img/add.svg" alt="add">
-                            <p class="add-txt">Add to Cart</p>
+                            <p class="add-txt">Add to&nbsp;Cart</p>
                         </a>
                     </div>
                 </div>
@@ -226,16 +235,17 @@
                     <a class="card-link" href="#">
                         <img class="card-pic" src="img/product-4.png" alt="blue jacket">
                         <div class="text-box">
-                            <p class="card-name">ELLERY X M'O CAPSULE</p>
-                            <p class="card-desc">Known for her sculptural takes on traditional tailoring, Australian
-                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="card-name">ELLERY X&nbsp;M&rsquo;O CAPSULE</p>
+                            <p class="card-desc">Known for her sculptural takes on&nbsp;traditional tailoring,
+                                Australian
+                                arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
                             <p class="card-price">$52.00</p>
                         </div>
                     </a>
                     <div class="add-box">
                         <a class="add" href="#">
                             <img src="img/add.svg" alt="add">
-                            <p class="add-txt">Add to Cart</p>
+                            <p class="add-txt">Add to&nbsp;Cart</p>
                         </a>
                     </div>
                 </div>
@@ -243,16 +253,17 @@
                     <a class="card-link" href="#">
                         <img class="card-pic" src="img/product-8.png" alt="blue jacket">
                         <div class="text-box">
-                            <p class="card-name">ELLERY X M'O CAPSULE</p>
-                            <p class="card-desc">Known for her sculptural takes on traditional tailoring, Australian
-                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="card-name">ELLERY X&nbsp;M&rsquo;O CAPSULE</p>
+                            <p class="card-desc">Known for her sculptural takes on&nbsp;traditional tailoring,
+                                Australian
+                                arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
                             <p class="card-price">$52.00</p>
                         </div>
                     </a>
                     <div class="add-box">
                         <a class="add" href="#">
                             <img src="img/add.svg" alt="add">
-                            <p class="add-txt">Add to Cart</p>
+                            <p class="add-txt">Add to&nbsp;Cart</p>
                         </a>
                     </div>
                 </div>
@@ -260,16 +271,17 @@
                     <a class="card-link" href="#">
                         <img class="card-pic" src="img/product-9.jpg" alt="blue jacket">
                         <div class="text-box">
-                            <p class="card-name">ELLERY X M'O CAPSULE</p>
-                            <p class="card-desc">Known for her sculptural takes on traditional tailoring, Australian
-                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="card-name">ELLERY X&nbsp;M&rsquo;O CAPSULE</p>
+                            <p class="card-desc">Known for her sculptural takes on&nbsp;traditional tailoring,
+                                Australian
+                                arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
                             <p class="card-price">$52.00</p>
                         </div>
                     </a>
                     <div class="add-box">
                         <a class="add" href="#">
                             <img src="img/add.svg" alt="add">
-                            <p class="add-txt">Add to Cart</p>
+                            <p class="add-txt">Add to&nbsp;Cart</p>
                         </a>
                     </div>
                 </div>
@@ -277,16 +289,17 @@
                     <a class="card-link" href="#">
                         <img class="card-pic" src="img/product-10.jpg" alt="blue jacket">
                         <div class="text-box">
-                            <p class="card-name">ELLERY X M'O CAPSULE</p>
-                            <p class="card-desc">Known for her sculptural takes on traditional tailoring, Australian
-                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="card-name">ELLERY X&nbsp;M&rsquo;O CAPSULE</p>
+                            <p class="card-desc">Known for her sculptural takes on&nbsp;traditional tailoring,
+                                Australian
+                                arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
                             <p class="card-price">$52.00</p>
                         </div>
                     </a>
                     <div class="add-box">
                         <a class="add" href="#">
                             <img src="img/add.svg" alt="add">
-                            <p class="add-txt">Add to Cart</p>
+                            <p class="add-txt">Add to&nbsp;Cart</p>
                         </a>
                     </div>
                 </div>
@@ -294,37 +307,60 @@
                     <a class="card-link" href="#">
                         <img class="card-pic" src="img/product-11.jpg" alt="blue jacket">
                         <div class="text-box">
-                            <p class="card-name">ELLERY X M'O CAPSULE</p>
-                            <p class="card-desc">Known for her sculptural takes on traditional tailoring, Australian
-                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="card-name">ELLERY X&nbsp;M&rsquo;O CAPSULE</p>
+                            <p class="card-desc">Known for her sculptural takes on&nbsp;traditional tailoring,
+                                Australian
+                                arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
                             <p class="card-price">$52.00</p>
                         </div>
                     </a>
                     <div class="add-box">
                         <a class="add" href="#">
                             <img src="img/add.svg" alt="add">
-                            <p class="add-txt">Add to Cart</p>
+                            <p class="add-txt">Add to&nbsp;Cart</p>
                         </a>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card last_card">
                     <a class="card-link" href="#">
                         <img class="card-pic" src="img/product-12.jpg" alt="blue jacket">
                         <div class="text-box">
-                            <p class="card-name">ELLERY X M'O CAPSULE</p>
-                            <p class="card-desc">Known for her sculptural takes on traditional tailoring, Australian
-                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="card-name">ELLERY X&nbsp;M&rsquo;O CAPSULE</p>
+                            <p class="card-desc">Known for her sculptural takes on&nbsp;traditional tailoring,
+                                Australian
+                                arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
                             <p class="card-price">$52.00</p>
                         </div>
                     </a>
                     <div class="add-box">
                         <a class="add" href="#">
                             <img src="img/add.svg" alt="add">
-                            <p class="add-txt">Add to Cart</p>
+                            <p class="add-txt">Add to&nbsp;Cart</p>
                         </a>
                     </div>
                 </div>
             </div>
+            <nav aria-label="Page navigation example">
+                <div class="pagination wrapper">
+                    <ul class="pagination-flex">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&quot;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </section>
     <div class="info">
@@ -333,7 +369,7 @@
                 <article class="infoCards">
                     <div class="delivery delivery_car"><img src="img/delivery.svg" alt="delivery"></div>
                     <h3 class="textHeadingInfo">Free delivery</h3>
-                    <p class="textInfo">Worldwide delivery on all. Authorit tively morph <br> next-generation innov
+                    <p class="textInfo">Worldwide delivery on&nbsp;all. Authorit tively morph <br> next-generation innov
                         tion
                         with
                         extensive models.
@@ -341,8 +377,8 @@
                 </article>
                 <article class="infoCards">
                     <div class="delivery delivery_sales"><img src="img/sales.svg" alt="delivery"></div>
-                    <h3 class="textHeadingInfo">Sales & discounts</h3>
-                    <p class="textInfo">Worldwide delivery on all. Authorit tively morph <br> next-generation innov
+                    <h3 class="textHeadingInfo">Sales &amp;&nbsp;discounts</h3>
+                    <p class="textInfo">Worldwide delivery on&nbsp;all. Authorit tively morph <br> next-generation innov
                         tion
                         with
                         extensive models.
@@ -351,7 +387,7 @@
                 <article class="infoCards">
                     <div class="delivery delivery_QA"><img src="img/QA.svg" alt="delivery"></div>
                     <h3 class="textHeadingInfo">Quality assurance</h3>
-                    <p class="textInfo">Worldwide delivery on all. Authorit tively morph <br> next-generation innov
+                    <p class="textInfo">Worldwide delivery on&nbsp;all. Authorit tively morph <br> next-generation innov
                         tion
                         with
                         extensive models.
@@ -366,9 +402,10 @@
                 <div class="footer_flex">
                     <figure class="footer_top_left">
                         <div><img src="img/woman.png" alt="women"></div>
-                        <div class="quote">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i> a pulvinar
+                        <div class="quote">&laquo;Vestibulum quis porttitor dui! Quisque viverra nunc&nbsp;mi, <i>
+                                a&nbsp;pulvinar
                                 purus <br>
-                                condimentum</i>“</div>
+                                condimentum</i>&raquo;</div>
                     </figure>
                     <div class="footer_top_right">
                         <div class="subscribe"><span class="subscribe_bolt">SUBSCRIBE</span> <br>
@@ -382,13 +419,13 @@
         </div>
         <div class="footer_bottom">
             <div class="footer_bottom container">
-                <p class="rights">© 2021 Brand All Rights Reserved.</p>
-                <div class="icons">
+                <p class="rights">&copy;&nbsp;2021 Brand All Rights Reserved.</p>
+                <nav class="icons">
                     <a href=""><i class="fa-brands fa-facebook-f"></i></a>
                     <a href=""><i class="fa-brands fa-instagram"></i></a>
                     <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
                     <a href=""><i class="fa-brands fa-twitter"></i></a>
-                </div>
+                </nav>
             </div>
         </div>
     </div>
